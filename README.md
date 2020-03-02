@@ -5,7 +5,8 @@ sh build.sh <version>
 # Test
 ```
 sh run.sh <version>
-curl -v -X http://localhost:3128 www.baidu.com
+curl -v -x http://localhost:3128 www.baidu.com
+http_proxy=http://localhost:3128 https_proxy=http://localhost:3128 python3 r.py
 ```
 
 # Deploy
